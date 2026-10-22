@@ -1,13 +1,48 @@
-.ve
-.idea
-.DS_Store
-__pycache__
-*.pyc
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual Environments
 .env
-.env.dev
-.env.test
-.env.local
-.vscode
+.env.*
+!.env.example
+.ve
+.ve/
+.venv
+.venv/
+env/
+venv/
+ENV/
+
+# Testing and coverage
 .coverage
+.coverage.*
+.pytest_cache/
+htmlcov/
+
+# Type checking / linting
+.mypy_cache/
+.ruff_cache/
+
+# IDE and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Secrets and local credentials
 google_credentials.json
+*.pem
+*.key
+
+# Scratch files
 ./test.py
